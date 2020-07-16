@@ -1,0 +1,36 @@
+<div class="container">
+  <% if !@resume.errors.empty? %>
+    <div>
+
+      <ul>
+        <% @resume.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %></ul>
+    </div>
+  <% end %>
+</div>
+
+<div class="container">
+  <% if !@resume.errors.empty? %>
+    <div>
+
+      <ul>
+        <% @resume.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>      </ul>
+
+    </div>
+  <% end %>
+
+  <div>
+    <%= form_for @resume, html: {multipart: true} do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <br><br>
+      <%= f.label :attachment %>
+      <%= f.file_field :attachment %>
+      <br>
+      <%= f.submit "Save" %>
+    <% end %>
+  </div>
+</div>
