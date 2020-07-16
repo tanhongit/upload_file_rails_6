@@ -1,0 +1,1152 @@
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateResumes (20200716034652)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "resumes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "attachment" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200716034652"]]
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-16 03:47:14.852139"], ["updated_at", "2020-07-16 03:47:14.852139"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-07-16 10:51:01 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1538)
+Completed 500 Internal Server Error in 232ms (ActiveRecord: 0.4ms | Allocations: 58735)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+    3:  <head>   
+    4:       <title>File Uploading</title>   
+    5:       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>   
+    6:       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>   
+    7:       <%= csrf_meta_tags %>   
+    8:    </head>   
+    9:       
+  
+app/views/layouts/application.html.erb:6
+Started GET "/" for ::1 at 2020-07-16 10:51:30 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 919)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/tanhong/upload_file_rails_6/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.43.0
+Time: 1705ms
+Built at: 07/16/2020 10:51:33 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3698ms (Views: 3696.2ms | ActiveRecord: 0.1ms | Allocations: 9009)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:51:40 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1278)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms | Allocations: 4610)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">   
+<% if !@resume.errors.empty? %>   
+   <div>   
+         
+      <ul>   
+         <% @resume.errors.full_messages.each do |msg| %>   
+            <li><%= msg %></li>   
+         <% end %>   
+<div class="container">   
+<% if !@resume.errors.empty? %>   
+   <div>   
+         
+      <ul>   
+         <% @resume.errors.full_messages.each do |msg| %>   
+            <li><%= msg %></li>   
+         <% end %>      </ul>   
+         
+   </div>   
+<% end %>   
+  
+<div>   
+   <%= form_for @resume, html: { multipart: true } do |f| %>   
+      <%= f.label :name %>   
+      <%= f.text_field :name %>   
+      <br><br>   
+      <%= f.label :attachment %>   
+      <%= f.file_field :attachment %>   
+      <br>   
+      <%= f.submit "Save" %>   
+   <% end %>   
+</div>   
+</div>  
+):
+1:    <div class="container">   
+2:    <% if !@resume.errors.empty? %>   
+3:       <div>   
+4:             
+5:          <ul>   
+6:             <% @resume.errors.full_messages.each do |msg| %>   
+7:                <li><%= msg %></li>   
+8:             <% end %>   
+9:    <div class="container">   
+10:    <% if !@resume.errors.empty? %>   
+11:       <div>   
+12:             
+13:          <ul>   
+14:             <% @resume.errors.full_messages.each do |msg| %>   
+15:                <li><%= msg %></li>   
+16:             <% end %>      </ul>   
+17:             
+18:       </div>   
+19:    <% end %>   
+20:      
+21:    <div>   
+22:       <%= form_for @resume, html: { multipart: true } do |f| %>   
+23:          <%= f.label :name %>   
+24:          <%= f.text_field :name %>   
+25:          <br><br>   
+26:          <%= f.label :attachment %>   
+27:          <%= f.file_field :attachment %>   
+28:          <br>   
+29:          <%= f.submit "Save" %>   
+30:       <% end %>   
+31:    </div>   
+32:    </div>  
+  
+app/views/resumes/new.html.erb:34: syntax error, unexpected end-of-input, expecting `end'
+app/views/resumes/new.html.erb:34: syntax error, unexpected end-of-input, expecting `end'
+app/views/resumes/new.html.erb:34: syntax error, unexpected end-of-input, expecting `end'
+app/views/resumes/new.html.erb:34: syntax error, unexpected end-of-input, expecting `end'
+app/views/resumes/new.html.erb:34: syntax error, unexpected end-of-input, expecting `end'
+app/views/resumes/new.html.erb:34: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:55:24 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 431)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 7457)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:55:26 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 6045)
+
+
+Started GET "/" for ::1 at 2020-07-16 10:55:27 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 7085)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:55:29 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 6049)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:55:31 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 6056)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:55:31 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 6052)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:55:31 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 6049)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:55:32 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 6046)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:56:03 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 540)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 27.4ms | ActiveRecord: 0.6ms | Allocations: 19032)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:56:04 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 6050)
+
+
+Started GET "/" for ::1 at 2020-07-16 10:56:06 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 965)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 7179)
+
+
+Started GET "/" for ::1 at 2020-07-16 10:56:06 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.1ms | Allocations: 6656)
+
+
+Started GET "/" for ::1 at 2020-07-16 10:56:07 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 642)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.1ms | Allocations: 6678)
+
+
+Started GET "/" for ::1 at 2020-07-16 10:56:21 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 904)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.1ms | Allocations: 13105)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+    3:  <head>   
+    4:       <title>File Uploading</title>   
+    5:       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>   
+    6:       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>   
+    7:       <%= csrf_meta_tags %>   
+    8:    </head>   
+    9:       
+  
+app/views/layouts/application.html.erb:6
+Started GET "/" for ::1 at 2020-07-16 10:57:53 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 659)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms | Allocations: 11749)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/tanhong/upload_file_rails_6/app/assets/config
+  /home/tanhong/upload_file_rails_6/app/assets/images
+  /home/tanhong/upload_file_rails_6/app/assets/stylesheets
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3.2/app/assets/javascripts
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3.2/app/assets/javascripts
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3.2/lib/assets/compiled
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/tanhong/upload_file_rails_6/node_modules
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/images):
+    2: <html>   
+    3:  <head>   
+    4:       <title>File Uploading</title>   
+    5:       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>   
+    6:       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>   
+    7:       <%= csrf_meta_tags %>   
+    8:    </head>   
+  
+app/assets/stylesheets/resumes.scss:5
+app/views/layouts/application.html.erb:5
+Started GET "/" for ::1 at 2020-07-16 10:57:55 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 633)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms | Allocations: 9953)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap' with type 'text/css'
+Checked in these paths: 
+  /home/tanhong/upload_file_rails_6/app/assets/config
+  /home/tanhong/upload_file_rails_6/app/assets/images
+  /home/tanhong/upload_file_rails_6/app/assets/stylesheets
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3.2/app/assets/javascripts
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3.2/app/assets/javascripts
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3.2/lib/assets/compiled
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/tanhong/upload_file_rails_6/node_modules
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/fonts
+  /home/tanhong/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/images):
+    2: <html>   
+    3:  <head>   
+    4:       <title>File Uploading</title>   
+    5:       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>   
+    6:       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>   
+    7:       <%= csrf_meta_tags %>   
+    8:    </head>   
+  
+app/assets/stylesheets/resumes.scss:5
+app/views/layouts/application.html.erb:5
+Started GET "/" for ::1 at 2020-07-16 10:58:06 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 642)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.1ms | Allocations: 19004)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.):
+    3:  <head>   
+    4:       <title>File Uploading</title>   
+    5:       <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>   
+    6:       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>   
+    7:       <%= csrf_meta_tags %>   
+    8:    </head>   
+    9:       
+  
+app/views/layouts/application.html.erb:6
+Started GET "/" for ::1 at 2020-07-16 10:59:10 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 900)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5273)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:59:13 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 428)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4008)
+
+
+Started GET "/" for ::1 at 2020-07-16 10:59:35 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 901)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.1ms | Allocations: 5262)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 10:59:37 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 431)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 4012)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:00:32 +0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:14 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 540)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 31.6ms | ActiveRecord: 0.5ms | Allocations: 18886)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:03:20 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 965)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 4604)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:03:20 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 4104)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:03:21 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 4086)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:23 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:24 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3467)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:25 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3545)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:25 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3483)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:25 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3502)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:26 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:26 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3465)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:26 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:27 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3552)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:27 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:27 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3465)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:27 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3460)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:28 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3453)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:28 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3465)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:28 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3469)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:29 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:29 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 3532)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:29 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3541)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:29 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3467)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:30 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:30 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3465)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:30 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3467)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:30 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3455)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:03:31 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 3535)
+
+
+Started GET "//new" for ::1 at 2020-07-16 11:03:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/new" for ::1 at 2020-07-16 11:03:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:01 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3579)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:05:08 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 648)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 4100)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:10 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3469)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:11 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3463)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:45 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 540)
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:45 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 20.8ms | ActiveRecord: 0.5ms | Allocations: 16462)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4907)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:45 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3468)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:46 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3467)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:46 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 3475)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:46 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3467)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:46 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3473)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:46 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3455)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:46 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 3452)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:50 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3538)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:05:52 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 971)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 4581)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:05:55 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3462)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:06:35 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 8395)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:06:37 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 6118)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:06:38 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 6051)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:06:39 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 6046)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:08:24 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 642)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.2ms | Allocations: 6665)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:08:27 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 6699)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:08:27 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 642)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 6689)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:08:27 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 6675)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:08:28 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.1ms | Allocations: 6674)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:08:28 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 636)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 6677)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:08:28 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 6676)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:08:31 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 6052)
+
+
+Started GET "/resume/new" for ::1 at 2020-07-16 11:08:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/resume/new"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resume/create" for ::1 at 2020-07-16 11:08:56 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/resume/create"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes/create" for ::1 at 2020-07-16 11:09:02 +0700
+Processing by ResumesController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 662)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: resume):
+  
+app/controllers/resumes_controller.rb:30:in `resume_params'
+app/controllers/resumes_controller.rb:12:in `create'
+Started GET "/resumes/create" for ::1 at 2020-07-16 11:11:09 +0700
+Processing by ResumesController#create as HTML
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms | Allocations: 653)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: resume):
+  
+app/controllers/resumes_controller.rb:30:in `resume_params'
+app/controllers/resumes_controller.rb:12:in `create'
+Started GET "/" for ::1 at 2020-07-16 11:11:12 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 646)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.1ms | Allocations: 10511)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:11:14 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 15)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 6049)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:11:15 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 6048)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:11:15 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6106)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:11:15 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 6054)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:11:16 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 6046)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:11:16 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 6048)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:11:17 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 14)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 6061)
+
+
+Started GET "/" for ::1 at 2020-07-16 11:11:52 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 6703)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-16 11:15:51 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 28.7ms | Allocations: 6373)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 13309)
+
+
+Started POST "/resumes" for ::1 at 2020-07-16 11:16:15 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"Is+rKgGPMBNiNxjZwIjop4ciRB2Acojcwe7O73oYvDbcc4koZomBdq7OyxyjDxe/v0fN1j/pM5lukojat6f9iQ==", "resume"=>{"name"=>"aaaaa", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00007efd9426de30 @tempfile=#<Tempfile:/tmp/RackMultipart20200716-43122-2r5pto.mp4>, @original_filename="Screencast-from-13-07-2020-18_10_54.mp4", @content_type="video/mp4", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screencast-from-13-07-2020-18_10_54.mp4\"\r\nContent-Type: video/mp4\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.4ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaaaa"], ["attachment", "Screencast-from-13-07-2020-18_10_54.mp4"], ["created_at", "2020-07-16 04:16:15.021014"], ["updated_at", "2020-07-16 04:16:15.021014"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 21ms (ActiveRecord: 5.4ms | Allocations: 8610)
+
+
+Started GET "/resumes" for ::1 at 2020-07-16 11:16:15 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1068)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 7254)
+
+
