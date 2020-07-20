@@ -87,3 +87,161 @@ mount_uploader :attachment, AttachmentUploader # Tells rails to use this uploade
 end  
 ```
 
+## Step 11 Go to config/routes.rb file and write the following code.
+
+```
+resources :resumes, only: [:index, :new, :create, :destroy]   
+   root "resumes#index"  
+```
+
+## Step 12 Go to app/controllers/resumes_controller.rb file and write the following code.
+
+```
+class ResumesController < ApplicationController
+
+    def index   
+      @resumes = Resume.all   
+   end   
+      
+   def new   
+      @resume = Resume.new   
+   end   
+      
+   def create   
+      @resume = Resume.new(resume_params)   
+         
+      if @resume.save   
+         redirect_to resumes_path, notice: "Successfully uploaded."   
+      else   
+         render "new"   
+      end   
+         
+   end   
+      
+   def destroy   
+      @resume = Resume.find(params[:id])   
+      @resume.destroy   
+      redirect_to resumes_path, notice:  "Successfully deleted."   
+   end   
+      
+   private   
+      def resume_params   
+      params.require(:resume).permit(:name, :attachment)   
+   end   
+end
+```
+
+## Step 13 Add bootstrap in app/assets/stylesheets/resumes.scss file.
+
+```
+@import "bootstrap";  
+```
+
+## Step 14 Go to app/views/layouts/application.html.erb file and write the following code.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UploadFileRails6</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+```
+
+## Step 15 Go to app/views/resumes/index.html.erb file.
+
+```
+<div class="container">   
+<% if !flash[:notice].blank? %>   
+   <div>   
+      <%= flash[:notice] %>   
+   </div>   
+<% end %>   
+  
+<br>   
+  
+<%= link_to "New Resume", new_resume_path %>   
+<br>   
+<br>   
+  
+<table border="3">   
+   <thead>   
+      <tr>   
+         <th>Candidate Name</th>   
+         <th>Download Link</th>   
+         <th>Action</th>   
+      </tr>   
+   </thead>   
+      
+   <tbody>   
+      <% @resumes.each do |resume| %>   
+            
+         <tr>   
+            <td><%= resume.name %></td>   
+            <td><%= link_to "Download", resume.attachment_url %></td>   
+            <td><%= link_to "Delete",  resume, method: :delete, confirm: "Are you sure you want to delete #{resume.name}?" %></td>   
+         </tr>   
+            
+      <% end %>   
+   </tbody>   
+      
+</table>   
+</div>
+```
+
+## Step 16 Go to app/views/resumes/new.html.erb file.
+
+```
+<div class="container">
+  <% if !@resume.errors.empty? %>
+    <div>
+
+      <ul>
+        <% @resume.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %></ul>
+    </div>
+  <% end %>
+</div>
+
+<div class="container">
+  <% if !@resume.errors.empty? %>
+    <div>
+
+      <ul>
+        <% @resume.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>      </ul>
+
+    </div>
+  <% end %>
+
+  <div>
+    <%= form_for @resume, html: {multipart: true} do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <br><br>
+      <%= f.label :attachment %>
+      <%= f.file_field :attachment %>
+      <br>
+      <%= f.submit "Save" %>
+    <% end %>
+  </div>
+</div>
+```
+
+## Step 17 Now start the server.
+
+```
+rails s
+```
+
