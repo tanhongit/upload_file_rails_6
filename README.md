@@ -19,6 +19,7 @@ We are going to build the web application using:
 - uby 2.7.1
 
 # 3. Feature
+Ability to upload many different types of files: .jpg, .png, .pdf, .mp4 , .mp3, .word, .excel, .....
 
 # 4. Tutorial
 
