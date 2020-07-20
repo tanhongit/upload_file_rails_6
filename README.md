@@ -15,8 +15,8 @@ Support this project :stuck_out_tongue_winking_eye: :pray:
 
 # 2. Configuration requirements
 We are going to build the web application using:
-    - Rails 6.0.3.2
-    - Ruby 2.7.1
+- Rails 6.0.3.2
+- uby 2.7.1
 
 # 3. Feature
 
