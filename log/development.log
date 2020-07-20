@@ -1150,3 +1150,1940 @@ Processing by ResumesController#index as HTML
 Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 7254)
 
 
+Started GET "/" for ::1 at 2020-07-20 16:00:33 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 4356)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 52.5ms | ActiveRecord: 0.8ms | Allocations: 21204)
+
+
+Started GET "/" for ::1 at 2020-07-20 16:04:58 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3735)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.3ms | ActiveRecord: 0.7ms | Allocations: 11090)
+
+
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screencast-from-13-07-2020-18_10_54.mp4" for ::1 at 2020-07-20 16:05:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screencast-from-13-07-2020-18_10_54.mp4"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-07-20 16:05:06 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 799)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.2ms | Allocations: 6906)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:05:07 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2536)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 8720)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:05:18 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"uV/5f290H3yxia2C8/x6nzvWq7PrRdWfoN/A8Bl4imNMpDbXubgdGCwFtaUNDhRJ1ieDS74O/NVj24BDcfuLIw==", "resume"=>{"name"=>"aaaaakg", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055923c1912b0 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-jqtnl.png>, @original_filename="Screenshot from 2020-06-25 08-34-19.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-06-25 08-34-19.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.4ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaaaakg"], ["attachment", "Screenshot_from_2020-06-25_08-34-19.png"], ["created_at", "2020-07-20 09:05:18.178098"], ["updated_at", "2020-07-20 09:05:18.178098"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 17ms (ActiveRecord: 5.3ms | Allocations: 6724)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:05:18 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 6892)
+
+
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:05:20 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes" for ::1 at 2020-07-20 16:06:21 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3921)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 0.8ms | Allocations: 11310)
+
+
+Started GET "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:06:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:06:35 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:06:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:06:58 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:06:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:06:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:06:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes" for ::1 at 2020-07-20 16:08:04 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 911)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.2ms | Allocations: 6952)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:09:30 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 912)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.2ms | Allocations: 6890)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:09:31 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 912)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.1ms | Allocations: 6868)
+
+
+Started GET "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:09:32 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/resume/attachment/2/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:09:35 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 578)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 6621)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:09:39 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"lR/gTJ9pVby28Z7xCjTGGiXyYjheTdpGUido0CPU0aJg5C/kSaVX2Ct9htb0xqjMyANKwAsG8wyRIyhjS1fQ4g==", "resume"=>{"name"=>"dhtr", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x0000559239b638e0 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-m9uude.png>, @original_filename="Screenshot from 2020-07-19 13-02-30.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-07-19 13-02-30.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.2ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "dhtr"], ["attachment", "Screenshot_from_2020-07-19_13-02-30.png"], ["created_at", "2020-07-20 09:09:39.709102"], ["updated_at", "2020-07-20 09:09:39.709102"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 15ms (ActiveRecord: 3.8ms | Allocations: 4636)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:09:39 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1055)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.1ms | Allocations: 7115)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:10:03 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4026)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.9ms | Allocations: 11278)
+
+
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:10:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes" for ::1 at 2020-07-20 16:10:18 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 4017)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 17.4ms | ActiveRecord: 0.7ms | Allocations: 11414)
+
+
+Started GET "/app/assets/images/Screenshot_from_2020-06-25_08-34-19.png" for ::1 at 2020-07-20 16:10:21 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Screenshot_from_2020-06-25_08-34-19.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes" for ::1 at 2020-07-20 16:10:46 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 4028)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.7ms | Allocations: 11361)
+
+
+Started DELETE "/resumes/1" for ::1 at 2020-07-20 16:10:48 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P5khoYX2VvSas0kl8MvwO4e+Gtp6F45admjDULxrCqIHFXRZgZSppeCSYpaNSH7qWaEuc5SNxRxI2v7LdxeIHQ==", "id"=>"1"}
+  [1m[36mResume Load (0.4ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.2ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 16ms (ActiveRecord: 7.1ms | Allocations: 4186)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:10:48 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 914)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 6905)
+
+
+Started DELETE "/resumes/2" for ::1 at 2020-07-20 16:10:49 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1gv3sbPt324elPXKSBcA4SuI3/Ze+tY0pFG626MsW2Duh6JJt48gP2S13nk1lI4w9ZfrX7BgnXKa44dAaFDZ3w==", "id"=>"2"}
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.2ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 19ms (ActiveRecord: 6.4ms | Allocations: 3720)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:10:49 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.1ms | Allocations: 6842)
+
+
+Started DELETE "/resumes/3" for ::1 at 2020-07-20 16:10:50 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"imky4nP8fLZxavgQ3UtculgUmGJ7xZFdEMGH8qNtXSSy5Wcad56D5wtL06OgyNJrhgusy5Vf2hsuc7ppaBHfmw==", "id"=>"3"}
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 12ms (ActiveRecord: 5.5ms | Allocations: 3710)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:10:50 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.1ms | Allocations: 6617)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:10:51 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 578)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6548)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:10:57 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"bg0PwLW6gPACEb/UDl02Z6VQra/gFjC7gqlfPqt2e7ib9sBoY3aClJ+dp/Pwr1ixSKGFV7VdGfFBrR+Nw/V6+A==", "resume"=>{"name"=>"fregh", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055923c4cd320 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-1yfbcny.png>, @original_filename="Screenshot from 2020-06-27 18-40-21.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-06-27 18-40-21.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.2ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fregh"], ["attachment", "Screenshot_from_2020-06-27_18-40-21.png"], ["created_at", "2020-07-20 09:10:57.284744"], ["updated_at", "2020-07-20 09:10:57.284744"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 12ms (ActiveRecord: 4.9ms | Allocations: 4563)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:10:57 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 6829)
+
+
+Started GET "/uploads/resume/attachment/Screenshot_from_2020-06-27_18-40-21.png" for ::1 at 2020-07-20 16:12:19 +0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/resumes" for ::1 at 2020-07-20 16:12:22 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 3746)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 0.9ms | Allocations: 11127)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:12:23 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 768)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 6736)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:12:24 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 578)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 6543)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:12:29 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"tuii22o18nk6MIYh2jyuBDDQjIRYAGjUMbzMjxK46IdDE21zvPnwHae8ngYkzsDS3SGkfA1LQZ7yuIw8ejvpxw==", "resume"=>{"name"=>"fdszf", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055923c628c38 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-1lycltd.png>, @original_filename="Screenshot from 2020-06-27 18-40-21.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-06-27 18-40-21.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.3ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fdszf"], ["attachment", "Screenshot_from_2020-06-27_18-40-21.png"], ["created_at", "2020-07-20 09:12:29.644449"], ["updated_at", "2020-07-20 09:12:29.644449"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 13ms (ActiveRecord: 5.0ms | Allocations: 6384)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:12:29 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms | Allocations: 6893)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:13:19 +0700
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-07-20 16:13:25 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3875)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.9ms | Allocations: 11259)
+
+
+Started GET "/" for ::1 at 2020-07-20 16:13:26 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.2ms | Allocations: 6860)
+
+
+Started DELETE "/resumes/4" for ::1 at 2020-07-20 16:13:27 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2NMDRb/d0EEp27I7BhFJMrWe5zPV3pmCFfs+PrAzzCzgX1a9u78vEFP6mYh7ksfja4HTmjtE0sQrSQOle09Okw==", "id"=>"4"}
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.2ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 12ms (ActiveRecord: 4.9ms | Allocations: 3898)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:13:27 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 6769)
+
+
+Started DELETE "/resumes/5" for ::1 at 2020-07-20 16:13:28 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uahnfCrei273ABQto+aQWizC+Vs/3Y6aLmCQG3+KPZWBJDKELrx0P40hP57eZR6L8t3N8tFHxdwQ0q2AtPa/Kg==", "id"=>"5"}
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 16ms (ActiveRecord: 7.1ms | Allocations: 3716)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:13:28 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 6623)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:13:39 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 578)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 6546)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:13:44 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"j6B7Arcrrr5XRpWnTwnHOh8GP6GFYlqtXDy1lEA5bZJ6W7SqYees2srKjYCx+6ns8vcXWdApc+efOPUnKLps0g==", "resume"=>{"name"=>"fdsgfr", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055923bfdab10 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-1cv2gwk.png>, @original_filename="Screenshot from 2020-07-19 13-02-30.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-07-19 13-02-30.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.3ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fdsgfr"], ["attachment", "Screenshot_from_2020-07-19_13-02-30.png"], ["created_at", "2020-07-20 09:13:44.697478"], ["updated_at", "2020-07-20 09:13:44.697478"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 11ms (ActiveRecord: 3.7ms | Allocations: 4557)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:13:44 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 6758)
+
+
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:13:46 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:16:46 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:16:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:16:47 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:16:48 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:16:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:16:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:16:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:16:52 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/assets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes" for ::1 at 2020-07-20 16:18:28 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 3743)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.7ms | Allocations: 11075)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:18:29 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 578)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 6534)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:18:34 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"0g6oNpnizv/tE6W8AgvPKBfHVuizQ2QyUedgUec85fAn9WeeTy7Mm3CfvZv8+aH++jZ+EOYITXiS4yDij7/ksA==", "resume"=>{"name"=>"régr", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055923c329258 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-10z2fva.png>, @original_filename="Screenshot from 2020-06-27 18-40-21.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-06-27 18-40-21.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.3ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "régr"], ["attachment", "Screenshot_from_2020-06-27_18-40-21.png"], ["created_at", "2020-07-20 09:18:34.364028"], ["updated_at", "2020-07-20 09:18:34.364028"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 14ms (ActiveRecord: 3.9ms | Allocations: 4631)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:18:34 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms | Allocations: 6899)
+
+
+Started DELETE "/resumes/6" for ::1 at 2020-07-20 16:18:37 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ll3KoCVSMvtFpW19EBDvGnWLBzxkkMLF8ZaCsPoBsswW0Z9YITDNqj+ERs5tk2HLq5QzlYoKiYPPJL8rMX0wcw==", "id"=>"6"}
+  [1m[36mResume Load (0.4ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 17ms (ActiveRecord: 7.1ms | Allocations: 3834)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:18:37 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms | Allocations: 6749)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:18:38 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.2ms | Allocations: 6803)
+
+
+Started DELETE "/resumes/7" for ::1 at 2020-07-20 16:18:44 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r7j8GvkZgMTs/Gdg3thBIyEOjmEMKZu923Wb22jgPyWXNKni/Xt/lZbdTNOjW8/y/xG6yOKz0Pvlx6ZAo5y9mg==", "id"=>"7"}
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 15ms (ActiveRecord: 7.2ms | Allocations: 3715)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:18:44 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 6615)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:18:50 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 6530)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:18:55 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"5+otixRKs0MkJPx0/tZU0XEnWmkpduRmGvffkjevFP0SEeIjwoaxJ7mo5FMAJDoHnNZykXw9zSzZ858hXywVvQ==", "resume"=>{"name"=>"fdsgrf", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00007f0c28991ef8 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-1d2bxnt.png>, @original_filename="Screenshot from 2020-06-27 18-40-21.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-06-27 18-40-21.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.2ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "fdsgrf"], ["attachment", "Screenshot_from_2020-06-27_18-40-21.png"], ["created_at", "2020-07-20 09:18:55.414222"], ["updated_at", "2020-07-20 09:18:55.414222"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 13ms (ActiveRecord: 5.6ms | Allocations: 4471)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:18:55 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 6751)
+
+
+Started GET "/" for ::1 at 2020-07-20 16:33:53 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.3ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3406)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.3ms | Allocations: 10679)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:33:56 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 578)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 6557)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:34:00 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"OTrOrO/eTuTn+su1PxJyOenDUXBQnCMLOKNerkTzZifMwQEEORJMgHp205LB4BzvBDJ5iAXXCkH7px4dLHBnZw==", "resume"=>{"name"=>"", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00007f0c34033e40 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-16al8bm.png>, @original_filename="Screenshot from 2020-06-27 18-40-21.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-06-27 18-40-21.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 9430)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:34:09 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"VlsnW3QxxBgIjQj5Ss/W0Nv4hGF03RGq6dmpxlFw9dBu13KjcFM7SXKsI0o3TFgBBeewyJpHWuzXa5Rdmgx3bw==", "resume"=>{"name"=>"aaaaakg", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055923c3172b0 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-12661-18j2x51.png>, @original_filename="Screenshot from 2020-07-19 13-02-30.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-07-19 13-02-30.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.2ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaaaakg"], ["attachment", "Screenshot_from_2020-07-19_13-02-30.png"], ["created_at", "2020-07-20 09:34:09.819407"], ["updated_at", "2020-07-20 09:34:09.819407"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 14ms (ActiveRecord: 4.9ms | Allocations: 6606)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:34:09 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 6871)
+
+
+Started GET "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:34:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:34:14 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2020-07-20 16:41:16 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2020-07-20 16:41:16 +0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Subscription class not found: "ProductsChannel"
+Started GET "/" for ::1 at 2020-07-20 16:41:29 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 4486)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 37.3ms | ActiveRecord: 0.6ms | Allocations: 21037)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2020-07-20 16:41:29 +0700
+Started GET "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:41:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:45:07 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:45:08 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/accets/images/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/home/tanhong/upload_file_rails_6/app/accets/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:45:12 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/home/tanhong/upload_file_rails_6/app/accets/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes/accets/Screenshot_from_2020-07-19_13-02-30.png" for ::1 at 2020-07-20 16:46:01 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/resumes/accets/Screenshot_from_2020-07-19_13-02-30.png"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/resumes/accets/" for ::1 at 2020-07-20 16:46:23 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/resumes/accets"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-07-20 16:47:23 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3940)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.7ms | Allocations: 11421)
+
+
+Started DELETE "/resumes/9" for ::1 at 2020-07-20 16:47:25 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YqOgq0KdtTzkkBk6KODLXkn35gqxtkOh0hFv39ATbolaL/VTRv9KbZ6xMolVY0WPl+jSo18sCOfso1JEG2/sNg==", "id"=>"9"}
+  [1m[36mResume Load (0.3ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 18ms (ActiveRecord: 7.1ms | Allocations: 4326)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:47:25 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 778)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms | Allocations: 6850)
+
+
+Started DELETE "/resumes/8" for ::1 at 2020-07-20 16:47:25 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/aigd/0PB8Odv6XQxZOdG6CDgzTYjDBWi9Z1sVHdXznFJPWP+W34kueejmO4EBPKfpy3nTYWexC1ZEgqmqHdhg==", "id"=>"8"}
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.3ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 17ms (ActiveRecord: 7.5ms | Allocations: 3766)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:47:25 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 6660)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 16:47:27 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2490)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 8646)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 16:47:33 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"FY4cGmHRgne3x44kEhNyulvHXm8Et4yIgknJh9mUpBHgddOytx2AEypLlgPs4RxstjZ2l1H8pcJBTYk0sRelUQ==", "resume"=>{"name"=>"55", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x0000561a4f5c25f0 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-20975-6oylx1.png>, @original_filename="Screenshot from 2020-07-19 13-02-30.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-07-19 13-02-30.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.2ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "55"], ["attachment", "Screenshot_from_2020-07-19_13-02-30.png"], ["created_at", "2020-07-20 09:47:33.219204"], ["updated_at", "2020-07-20 09:47:33.219204"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 14ms (ActiveRecord: 4.9ms | Allocations: 4821)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 16:47:33 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 782)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 6813)
+
+
+Started GET "/" for ::1 at 2020-07-20 17:19:10 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 4356)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 38.0ms | ActiveRecord: 0.8ms | Allocations: 19935)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 17:19:18 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2590)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 8752)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 17:19:28 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"eyvIGIfwXMlCxMzQuERnZdFhycHS5NSD+6ID6ZRuJ8uO0AewUTxerd9I1PdGtgmzPJDhOYev/ck4pkNa/O0miw==", "resume"=>{"name"=>"img1", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055f1e2b07140 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-26686-xtrcsb.png>, @original_filename="Screenshot from 2020-06-27 18-40-21.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-06-27 18-40-21.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.3ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "img1"], ["attachment", "Screenshot_from_2020-06-27_18-40-21.png"], ["created_at", "2020-07-20 10:19:28.107171"], ["updated_at", "2020-07-20 10:19:28.107171"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 28ms (ActiveRecord: 17.9ms | Allocations: 4944)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 17:19:28 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.1ms | Allocations: 6955)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 17:19:35 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 912)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 6922)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 17:19:40 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 6579)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 17:19:47 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"fQwxNae9lG49Atbk/DTNzPT3ZDTk9T05cICaG2f2C56I9/6dcXGWCqCOzsMCxqMaGQZMzLG+FHOzhNqoD3UK3g==", "resume"=>{"name"=>"img2", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055f1e38522c8 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-26686-2q91tg.png>, @original_filename="Screenshot from 2020-06-27 18-40-21.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-06-27 18-40-21.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.2ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "img2"], ["attachment", "Screenshot_from_2020-06-27_18-40-21.png"], ["created_at", "2020-07-20 10:19:47.773257"], ["updated_at", "2020-07-20 10:19:47.773257"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (17.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 26ms (ActiveRecord: 17.7ms | Allocations: 4540)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 17:19:47 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1057)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 7082)
+
+
+Started GET "/resumes/new" for ::1 at 2020-07-20 17:20:39 +0700
+Processing by ResumesController#new as HTML
+  Rendering resumes/new.html.erb within layouts/application
+  Rendered resumes/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 575)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 6592)
+
+
+Started POST "/resumes" for ::1 at 2020-07-20 17:21:02 +0700
+Processing by ResumesController#create as HTML
+  Parameters: {"authenticity_token"=>"3mRC3KKdJ4y8eCAUEdHApk91DD+OcKgsinDnQE6VnMcrn410dFEl6CH0ODPvI65wooQkx9s7gWZJdKfzJhadhw==", "resume"=>{"name"=>"img3", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055f1e33a2930 @tempfile=#<Tempfile:/tmp/RackMultipart20200720-26686-1bsk20l.png>, @original_filename="Screenshot from 2020-07-20 17-20-01.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"resume[attachment]\"; filename=\"Screenshot from 2020-07-20 17-20-01.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[36mResume Create (0.2ms)[0m  [1m[32mINSERT INTO "resumes" ("name", "attachment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "img3"], ["attachment", "Screenshot_from_2020-07-20_17-20-01.png"], ["created_at", "2020-07-20 10:21:02.124217"], ["updated_at", "2020-07-20 10:21:02.124217"]]
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+  [1m[35m (16.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:14:in `create'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 26ms (ActiveRecord: 17.2ms | Allocations: 4524)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 17:21:02 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1195)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms | Allocations: 7231)
+
+
+Started DELETE "/resumes/13" for ::1 at 2020-07-20 17:21:30 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7AzXJ7ZXOvQBaOailPO58ltqhLpT8zLxgd6GeAbGoirUgILfsjXFpXtJzRHpcDcjhXWwE71pebe/bLvjzboglQ==", "id"=>"13"}
+  [1m[36mResume Load (0.3ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.2ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (12.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 34ms (ActiveRecord: 13.3ms | Allocations: 6141)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 17:21:30 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1055)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.1ms | Allocations: 7089)
+
+
+Started DELETE "/resumes/10" for ::1 at 2020-07-20 17:21:31 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1O8J7xq5ilKECZE0+xWVpg2wWRTGoWEJD2VK37aBuensY1wXHtt1A/4ouoeGlht3069tvSg7Kk8x13dEff07Vg==", "id"=>"10"}
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.2ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (16.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 24ms (ActiveRecord: 17.2ms | Allocations: 3771)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 17:21:31 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 916)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 6947)
+
+
+Started DELETE "/resumes/11" for ::1 at 2020-07-20 17:21:33 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q7ACASFcvoaDSjMEuhns0HD1qlsHbEdiZaBqo8v3Z+STPFf5JT5B1/lrGLfHmmIBruqe8un2DCRbElc4AIvlWw==", "id"=>"11"}
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.2ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (14.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 21ms (ActiveRecord: 14.7ms | Allocations: 3763)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 17:21:33 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 777)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 6803)
+
+
+Started DELETE "/resumes/12" for ::1 at 2020-07-20 17:21:34 +0700
+Processing by ResumesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"whOVcWMckk+RRGmK9fCF5Dav8JOEa1+asMPPRZv02TT6n8CJZ35tHutlQjmIcws16LDEOmrxFNyOcfLeUIhbiw==", "id"=>"12"}
+  [1m[36mResume Load (0.2ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes" WHERE "resumes"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/resumes_controller.rb:23:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[36mResume Destroy (0.2ms)[0m  [1m[31mDELETE FROM "resumes" WHERE "resumes"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/resumes_controller.rb:24:in `destroy'
+Redirected to http://localhost:3000/resumes
+Completed 302 Found in 22ms (ActiveRecord: 15.0ms | Allocations: 3773)
+
+
+Started GET "/resumes" for ::1 at 2020-07-20 17:21:34 +0700
+Processing by ResumesController#index as HTML
+  Rendering resumes/index.html.erb within layouts/application
+  [1m[36mResume Load (0.1ms)[0m  [1m[34mSELECT "resumes".* FROM "resumes"[0m
+  ↳ app/views/resumes/index.html.erb:24
+  Rendered resumes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.1ms | Allocations: 6679)
+
+
