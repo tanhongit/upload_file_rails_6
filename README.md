@@ -80,7 +80,7 @@ rails g uploader attachment
 
 ## Step 10 Now open the app/models/resume.rb model file and write the following code.
 
-```
+```ruby
 class Resume < ApplicationRecord   
 mount_uploader :attachment, AttachmentUploader # Tells rails to use this uploader for this model.   
    validates :name, presence: true # Make sure the owner's name is present.   
@@ -89,14 +89,14 @@ end
 
 ## Step 11 Go to config/routes.rb file and write the following code.
 
-```
+```ruby
 resources :resumes, only: [:index, :new, :create, :destroy]   
    root "resumes#index"  
 ```
 
 ## Step 12 Go to app/controllers/resumes_controller.rb file and write the following code.
 
-```
+```ruby
 class ResumesController < ApplicationController
 
     def index   
@@ -133,13 +133,13 @@ end
 
 ## Step 13 Add bootstrap in app/assets/stylesheets/resumes.scss file.
 
-```
+```ruby
 @import "bootstrap";  
 ```
 
 ## Step 14 Go to app/views/layouts/application.html.erb file and write the following code.
 
-```
+```ruby
 <!DOCTYPE html>
 <html>
   <head>
@@ -159,7 +159,7 @@ end
 
 ## Step 15 Go to app/views/resumes/index.html.erb file.
 
-```
+```ruby
 <div class="container">   
 <% if !flash[:notice].blank? %>   
    <div>   
@@ -200,7 +200,7 @@ end
 
 ## Step 16 Go to app/views/resumes/new.html.erb file.
 
-```
+```ruby
 <div class="container">
   <% if !@resume.errors.empty? %>
     <div>
