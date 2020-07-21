@@ -16,7 +16,7 @@ Support this project :stuck_out_tongue_winking_eye: :pray:
 # 2. Configuration requirements
 We are going to build the web application using:
 - Rails 6.0.3.2
-- uby 2.7.1
+- Ruby 2.7.1
 
 # 3. Feature
 Ability to upload many different types of files: .jpg, .png, .pdf, .mp4 , .mp3, .word, .excel, .....
