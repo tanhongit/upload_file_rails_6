@@ -12,7 +12,7 @@ Support this project :stuck_out_tongue_winking_eye: :pray:
 
 # Demo
 
-You can try it at https://calm-escarpment-34931.herokuapp.com/
+You can try it at https://uploadfilerails6.herokuapp.com/
 
 # 1. Technology
 - Ruby on Rails
