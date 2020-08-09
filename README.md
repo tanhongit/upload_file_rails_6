@@ -10,6 +10,10 @@ Support this project :stuck_out_tongue_winking_eye: :pray:
     <a href="https://www.paypal.me/tanhongit" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" data-origin="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="PayPal buymeacoffee TanHongIT"></a>
 </p>
 
+# Demo
+
+You can try it at https://calm-escarpment-34931.herokuapp.com/
+
 # 1. Technology
 - Ruby on Rails
 
