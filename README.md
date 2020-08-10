@@ -25,7 +25,78 @@ We are going to build the web application using:
 # 3. Feature
 Ability to upload many different types of files: .jpg, .png, .pdf, .mp4 , .mp3, .word, .excel, .....
 
-# 4. Tutorial
+# 4. Runing
+
+### 1. Clone Repo
+
+```
+$ git clone https://github.com/TanHongIT/upload_file_rails_6
+$ cd upload_file_rails_6
+```
+
+### 2. Bundle Install 
+
+```
+$ bundle install
+```
+
+### 3. Yarn Install 
+
+```
+$ yarn install
+```
+
+### 4. Create database with Postgresql
+
+You must change the appropriate database configuration
+
+Change configuration at _"config/database.yml"_ with Postgresql.
+
+```ruby
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  username: upload_file_rails_6
+  password: 1234
+  host: localhost
+
+# tutorial for ubuntu linux:
+# sudo -u postgres psql
+# create user "upload_file_rails_6" with password '1234';  
+# create database "upload_file_rails_6" owner "upload_file_rails_6"; 
+
+development:
+  <<: *default
+  database: chat_room_rails_6
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: upload_file_rails_6_test
+
+production:
+  <<: *default
+  database: upload_file_rails_6_production
+```
+
+### 5. run rails db:migrate
+
+```
+$ rails db:migrate
+```
+
+### 6. run server
+
+```
+$ rails s
+```
+
+And now go to  http://localhost:3000/
+
+# 5. Tutorial
 
 ## Step 1 Create a Rails application called upload.
 
