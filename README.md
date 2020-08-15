@@ -334,3 +334,9 @@ rails s
 ---------------------------------------------------------------------------------
 
 ![Image](https://imgur.com/80d12lx.png)
+
+# 6. Suggestions
+
+You can change the path to save the file at the store_dir function in the file **"app/uploaders/attachment_uploader.rb"**
+
+![Image](https://imgur.com/cQApk6G.png)
