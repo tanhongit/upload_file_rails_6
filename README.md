@@ -340,3 +340,7 @@ rails s
 You can change the path to save the file at the store_dir function in the file **"app/uploaders/attachment_uploader.rb"**
 
 ![Image](https://imgur.com/cQApk6G.png)
+
+<p align="center">
+     <img src="https://img.shields.io/packagist/l/doctrine/orm.svg" data-origin="https://img.shields.io/packagist/l/doctrine/orm.svg" alt="license">
+</p>
