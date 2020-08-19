@@ -50,7 +50,7 @@ $ yarn install
 
 You must change the appropriate database configuration
 
-Change configuration at _"config/database.yml"_ with Postgresql.
+Change configuration at _"**config/database.yml**"_ with Postgresql.
 
 ```ruby
 default: &default
@@ -215,7 +215,7 @@ end
 @import "bootstrap";  
 ```
 
-## Step 14 Go to app/views/layouts/application.html.erb file and write the following code.
+## Step 14 Go to **app/views/layouts/application.html.erb** file and write the following code.
 
 ```ruby
 <!DOCTYPE html>
@@ -235,7 +235,7 @@ end
 </html>
 ```
 
-## Step 15 Go to app/views/resumes/index.html.erb file.
+## Step 15 Go to **app/views/resumes/index.html.erb** file.
 
 ```ruby
 <div class="container">   
@@ -276,7 +276,7 @@ end
 </div>
 ```
 
-## Step 16 Go to app/views/resumes/new.html.erb file.
+## Step 16 Go to **app/views/resumes/new.html.erb** file.
 
 ```ruby
 <div class="container">
@@ -337,7 +337,7 @@ rails s
 
 # 6. Suggestions
 
-You can change the path to save the file at the store_dir function in the file **"app/uploaders/attachment_uploader.rb"**
+You can change the path to save the file at the _**store_dir**_ function in the file **"app/uploaders/attachment_uploader.rb"**
 
 ![Image](https://imgur.com/cQApk6G.png)
 
